@@ -6,11 +6,11 @@ export const birdBreeds: Breed[] = [
     name: 'Budgerigar',
     species: 'birds',
     subCategory: 'parakeets',
+    description: 'Popular small parrots known for their ability to mimic human speech',
     traits: ['Social', 'Intelligent', 'Playful'],
     imageUrl: 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&q=80',
     popularity: 1
   },
-  // Add more bird breeds as needed
 ];
 
 export const birdSubCategories = [

@@ -6,6 +6,7 @@ export const reptileBreeds: Breed[] = [
     name: 'Bearded Dragon',
     species: 'reptiles',
     subCategory: 'lizards',
+    description: 'Friendly lizards that make excellent first-time reptile pets',
     traits: ['Docile', 'Hardy', 'Social'],
     imageUrl: 'https://images.unsplash.com/photo-1534295983867-d6d8f7288d2f?auto=format&fit=crop&q=80',
     popularity: 1

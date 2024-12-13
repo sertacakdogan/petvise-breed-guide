@@ -1,16 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
-export interface Breed {
-  id: string;
-  name: string;
-  species: string;
-  subCategory: string;
-  traits: string[];
-  imageUrl: string;
-  popularity?: number;
-}
+import type { Breed } from '@/types';
 
 interface BreedCardProps {
   breed: Breed;
@@ -19,7 +10,7 @@ interface BreedCardProps {
 export const BreedCard = ({ breed }: BreedCardProps) => {
   return (
     <Link to={`/pet-breed-guides/${breed.species}/${breed.id}`} className="block">
-      <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-[#f8fcfc]">
         <div className="aspect-square overflow-hidden">
           <img
             src={breed.imageUrl}
@@ -29,6 +20,7 @@ export const BreedCard = ({ breed }: BreedCardProps) => {
         </div>
         <CardHeader className="p-4">
           <h3 className="text-xl font-semibold">{breed.name}</h3>
+          <p className="text-sm text-muted-foreground">{breed.description}</p>
         </CardHeader>
         <CardContent className="p-4 pt-0">
           <div className="flex flex-wrap gap-2">

@@ -6,11 +6,11 @@ export const fishBreeds: Breed[] = [
     name: 'Betta Fish',
     species: 'fish',
     subCategory: 'tropical',
+    description: 'Stunning fighters with flowing fins and vibrant colors',
     traits: ['Colorful', 'Territorial', 'Active'],
     imageUrl: 'https://images.unsplash.com/photo-1520366498724-709889c0c685?auto=format&fit=crop&q=80',
     popularity: 1
   },
-  // Add more fish breeds as needed
 ];
 
 export const fishSubCategories = [

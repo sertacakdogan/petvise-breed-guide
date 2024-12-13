@@ -41,7 +41,7 @@ export const CategoryFilters = ({
                 variant="outline"
                 size="sm"
                 onClick={() => onSubCategoryChange(subCategory.id)}
-                className={`h-7 rounded-full text-xs ${
+                className={`h-7 rounded-full text-xs bg-[#f8fcfc] ${
                   selectedSubCategories.includes(subCategory.id)
                     ? 'border-primary text-primary'
                     : ''
